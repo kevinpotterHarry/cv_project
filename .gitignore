@@ -1,0 +1,95 @@
+# ====================== 仓库说明 ======================
+# 本项目根目录 project_cv
+# 自己写的代码放在 ./my_code/ 文件夹（你新建这个文件夹，专门放你自己写的）
+# d2l、PyTorch-Tutorial-2nd 是下载的第三方仓库，不上传git
+# 数据集、模型权重、缓存、日志、虚拟环境、本地配置全部忽略，防止泄露、仓库臃肿
+# =====================================================
+
+# 第三方源码仓库（你要忽略的两个）
+d2l/
+PyTorch-Tutorial-2nd/
+
+# ---------------------- Python 通用忽略 ----------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 虚拟环境（防止把环境打包上传）
+venv/
+env/
+.venv/
+.env/
+env.bak/
+venv.bak/
+
+# Jupyter 缓存
+.ipynb_checkpoints/
+
+# ---------------------- 深度学习常用忽略 ----------------------
+# 数据集
+data/
+dataset/
+datasets/
+*.zip
+*.rar
+*.tar
+*.gz
+
+# 模型权重、checkpoint
+weights/
+checkpoints/
+runs/
+logs/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+
+# 训练输出、可视化结果
+output/
+result/
+results/
+predict/
+vis/
+
+# 图片缓存
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.webp
+
+# ---------------------- VS Code 本地配置 ----------------------
+.vscode/
+*.code-workspace
+
+# ---------------------- 系统杂项文件 ----------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ---------------------- 本地私有配置（防止泄露信息） ----------------------
+.env
+*.env
+config_local.yaml
+local_config.py
+secret.json
